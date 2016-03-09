@@ -188,7 +188,7 @@ function game_event(eventID){
 	} else if (eventID == 14201 ){
 		display("images/perfection.png", "audio/perfection.mp3")
 	} else if (eventID == 14339 ){
-		display_medal("images/killed_juggernaut.png")
+		display_medal("images/juggernaut_kill.png")
 	} else if (eventID == 14249 ){
 		display("images/juggernaut_spree.png", "audio/juggernaut_spree.mp3")
 	} else if (eventID == 14251 ){
