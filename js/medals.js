@@ -1,7 +1,43 @@
 var fadeTime = 300;
-var removeTime = 3000;
+var removeTime = 3500;
 var medalsPath = 'mods/medals/halo3/';
 var playQueue = [];
+
+$.fn.rotate = function() { 
+    var i = 0;
+    var medal = this.selector;
+    function spinLoop(medal) { 
+        setTimeout(function () {  
+            $(medal).css({'-webkit-transform' : 'rotate(-'+ i +'deg)'});
+            i+=10;
+            if (i < 360) { 
+                spinLoop(medal);
+            } else if ( i == 360){
+                spinLoop(medal);
+                setTimeout(function () { 
+                    pulse(medal);
+                }, 75)
+            }  
+        }, 6)
+    }
+    spinLoop(medal);
+};
+
+function pulse(medal) {
+    var i = 1;
+    function pulseLoop(medal) { 
+        setTimeout(function () {  
+            $(medal).css({'-webkit-transform' : 'scale('+ i +','+ i +')'});
+            i+=0.2;
+            if (i < 1.6) { 
+                pulseLoop(medal);
+            } else if (i = 1.6){
+                $(medal).css({'-webkit-transform' : 'scale(1,1)'});               
+            }  
+        }, 55)
+    }
+    pulseLoop(medal);
+};
 
 function display(medal, audio){
 	queue_audio(audio);
@@ -32,8 +68,8 @@ function play(audio){
 var medalNum = 0;
 function display_medal(medal){
 	var currentMedalNum = medalNum;
-	$('#medalBox').append('<img id="'+ medalNum + '" src="' + medalsPath + medal +	'">')
-	$("#"+currentMedalNum).hide().fadeIn(fadeTime);
+	$('#medalBox').prepend('<img id="'+ medalNum + '" src="' + medalsPath + medal + '">');
+	$("#"+currentMedalNum).rotate();
 	setTimeout(function(){
 		$("#"+currentMedalNum).fadeOut(fadeTime, function() { $("#"+currentMedalNum).remove(); });
 	}, removeTime);
