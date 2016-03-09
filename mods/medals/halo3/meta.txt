@@ -1,0 +1,4 @@
+name=Halo 3 Pack
+description=x
+author=x
+api_version=1.0.0
