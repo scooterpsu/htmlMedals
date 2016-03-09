@@ -2,24 +2,32 @@ var medalNum = 0;
 var fadeTime = 300;
 var removeTime = 3000;
 var medalsPath = 'mods/medals/halo3/';
-
-function queue_audio(audio){
-	var audioElement = document.createElement('audio');
-	audioElement.setAttribute('src', medalsPath + audio);
-	audioElement.setAttribute('autoplay', 'autoplay');	
-}
+var playQueue = [];
 
 function display(medal, audio){
-	var audioElement = document.createElement('audio');
-	audioElement.setAttribute('src', medalsPath + audio);
-	audioElement.setAttribute('autoplay', 'autoplay');	
-	$('#medalBox').append('<img id="'+ medalNum + '" src="' + medalsPath + medal +	'">')
-	$("#"+currentMedalNum).hide().fadeIn(fadeTime);
-	var currentMedalNum = medalNum;
-	setTimeout(function(){
-		$("#"+currentMedalNum).fadeOut(fadeTime, function() { $("#"+currentMedalNum).remove(); });
-	}, removeTime);
-	medalNum++;
+	queue_audio(audio);
+	display_medal(medal);
+}
+
+function queue_audio(audio){
+	playQueue.push(medalsPath + audio);
+	if(!isPlaying){
+		play(playQueue[0]);	
+	}
+}
+
+var isPlaying = false;
+function play(audio){
+	isPlaying = true;
+	var audioElement = new Audio(audio);
+	audioElement.play();
+	audioElement.onended = function(){
+		isPlaying = false;
+		playQueue.splice(0, 1);
+		if(playQueue.length > 0){
+			play(playQueue[0]);	
+		}
+	}
 }
 
 function display_medal(medal){
