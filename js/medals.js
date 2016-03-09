@@ -1,4 +1,3 @@
-var medalNum = 0;
 var fadeTime = 300;
 var removeTime = 3000;
 var medalsPath = 'mods/medals/halo3/';
@@ -30,10 +29,11 @@ function play(audio){
 	}
 }
 
+var medalNum = 0;
 function display_medal(medal){
+	var currentMedalNum = medalNum;
 	$('#medalBox').append('<img id="'+ medalNum + '" src="' + medalsPath + medal +	'">')
 	$("#"+currentMedalNum).hide().fadeIn(fadeTime);
-	var currentMedalNum = medalNum;
 	setTimeout(function(){
 		$("#"+currentMedalNum).fadeOut(fadeTime, function() { $("#"+currentMedalNum).remove(); });
 	}, removeTime);
