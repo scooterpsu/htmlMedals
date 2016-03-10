@@ -1,27 +1,26 @@
 var fadeTime = 300;
+var animTime = 18;
 var removeTime = 3500;
 var medalsPath = 'mods/medals/halo3/';
 var playQueue = [];
 
 $.fn.pulse = function() { 
-        var i = 0.5, x = 0, medal = this.selector;
-        $(medal).css('opacity', x );
-        function pulseLoop(medal) { 
-            setTimeout(function () {  
-                $(medal).css({'-webkit-transform' : 'scale('+ i +','+ i +')'});
-                $(medal).css('opacity', x );
-                i+=0.1, x+=0.4;
-                if (i < 1.5) { 
-                    pulseLoop(medal);
-                } else if (i = 1.5){
-                    $(medal).css({'-webkit-transform' : 'scale(1.2,1.2)'});   
-                    setTimeout(function () {  
-                        $(medal).css({'-webkit-transform' : 'scale(1,1)'});             
-                    }, 20)            
-                }  
-            }, 20)
-        }
-        pulseLoop(medal);
+	var i = 0.5, x = 0, medal = this.selector;
+	function pulseLoop(medal) { 
+		setTimeout(function () {  
+			$(medal).css({'-webkit-transform': 'scale('+ i +','+ i +')', 'opacity': x });
+			i+=0.1, x+=0.4;
+			if (i < 1.5) { 
+				pulseLoop(medal);
+			} else if (i = 1.5) {
+				$(medal).css({'-webkit-transform' : 'scale(1.2,1.2)'});   
+				setTimeout(function () {  
+					$(medal).css({'-webkit-transform' : 'scale(1,1)'});             
+				}, animTime)
+			}  
+		}, animTime)
+	}
+	pulseLoop(medal);
 };
 
 function display(medal, audio){
