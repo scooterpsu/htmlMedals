@@ -60,218 +60,213 @@ function display_medal(medal){
 	medalNum++;
 }
 
-function game_event(eventID){
-	if (eventID == 14112 ){
-		queue_audio("audio/suicide.mp3", false)
-	} else if (eventID == 14114 ){
-		queue_audio("audio/betrayed.mp3", false)
-	} else if (eventID == 14115 ){
-		queue_audio("audio/betrayal.mp3", false)
-	} else if (eventID == 14350 ){
-		queue_audio("audio/bomb_dropped.mp3", false)
-	} else if (eventID == 14355 || eventID == 14366 || eventID == 14356 ){
-		queue_audio("audio/bomb_reset.mp3", false)
-	} else if (eventID == 14349 || eventID == 18106 ){
-		queue_audio("audio/bomb_taken.mp3", false)
-	} else if (eventID == 14351 || eventID == 14354 || eventID == 14352 ){
-		queue_audio("audio/bomb_returned.mp3", false)
-	} else if (eventID == 14361 || eventID == 14362 ){
-		queue_audio("audio/bomb_detonated.mp3", false)
-	} else if (eventID == 14357 || eventID == 14358 || eventID == 14359 ){
-		queue_audio("audio/bomb_armed.mp3", false)
-	} else if (eventID == 14363 || eventID == 14364 || eventID == 14365 ){
-		queue_audio("audio/bomb_disarmed.mp3", false)
-	} else if (eventID == 14335 ){
-		queue_audio("audio/destination_moved.mp3", false)
-	} else if (eventID == 393408 ){
-		queue_audio("audio/hill_moved.mp3", false)
-	} else if (eventID == 16048 ){
-		queue_audio("audio/hill_moved.mp3", false)
-	} else if (eventID == 14318 ){
-		queue_audio("audio/hill_controlled.mp3", false)
-	} else if (eventID == 14321 ){
-		queue_audio("audio/hill_contested.mp3", false)
-	} else if (eventID == 14320 ){
-		queue_audio("audio/hill_controlled.mp3", false)
-	} else if (eventID == 14322 ){
-		queue_audio("audio/hill_contested.mp3", false)
-	} else if (eventID == 14300 ){
-		queue_audio("audio/flag_reset.mp3", false)
-	} else if (eventID == 14302 ){
-		queue_audio("audio/flag_recovered.mp3", false)
-	} else if (eventID == 14304 ){
-		queue_audio("audio/flag_taken.mp3", false)
-	} else if (eventID == 14305 ){
-		queue_audio("audio/flag_stolen.mp3", true)
-	} else if (eventID == 14307 ){
-		queue_audio("audio/flag_dropped.mp3", true)
-	} else if (eventID == 14312 ){
-		queue_audio("audio/ball_taken.mp3", false)
-	} else if (eventID == 14313 ){
-		queue_audio("audio/ball_dropped.mp3", false)
-	} else if (eventID == 14314 ){
-		queue_audio("audio/play_ball.mp3", false)
-	} else if (eventID == 14315 ){
-		queue_audio("audio/ball_reset.mp3", false)
-	} else if (eventID == 14178 ){
+function doMedal(eventString){
+	if (eventString == "suicide"){
+		queue_audio("audio/suicide.mp3")
+	} else if (eventString == "betrayed"){
+		queue_audio("audio/betrayed.mp3")
+	} else if (eventString == "betrayal"){
+		queue_audio("audio/betrayal.mp3")
+	} else if (eventString == "bomb_dropped"){
+		queue_audio("audio/bomb_dropped.mp3")
+	} else if (eventString == "bomb_reset"){
+		queue_audio("audio/bomb_reset.mp3")
+	} else if (eventString == "bomb_taken"){
+		queue_audio("audio/bomb_taken.mp3")
+	} else if (eventString == "bomb_returned"){
+		queue_audio("audio/bomb_returned.mp3")
+	} else if (eventString == "bomb_detonated"){
+		queue_audio("audio/bomb_detonated.mp3")
+	} else if (eventString == "bomb_armed"){
+		queue_audio("audio/bomb_armed.mp3")
+	} else if (eventString == "bomb_disarmed"){
+		queue_audio("audio/bomb_disarmed.mp3")
+	} else if (eventString == "destination_moved"){
+		queue_audio("audio/destination_moved.mp3")
+	} else if (eventString == "hill_moved"){
+		queue_audio("audio/hill_moved.mp3")
+	} else if (eventString == "hill_controlled"){
+		queue_audio("audio/hill_controlled.mp3")
+	} else if (eventString == "hill_contested"){
+		queue_audio("audio/hill_contested.mp3")
+	} else if (eventString == "flag_reset"){
+		queue_audio("audio/flag_reset.mp3")
+	} else if (eventString == "flag_recovered"){
+		queue_audio("audio/flag_recovered.mp3")
+	} else if (eventString == "flag_taken"){
+		queue_audio("audio/flag_taken.mp3")
+	} else if (eventString == "flag_stolen"){
+		queue_audio("audio/flag_stolen.mp3")
+	} else if (eventString == "flag_dropped"){
+		queue_audio("audio/flag_dropped.mp3")
+	} else if (eventString == "ball_taken"){
+		queue_audio("audio/ball_taken.mp3")
+	} else if (eventString == "ball_dropped"){
+		queue_audio("audio/ball_dropped.mp3")
+	} else if (eventString == "play_ball"){
+		queue_audio("audio/play_ball.mp3")
+	} else if (eventString == "ball_reset"){
+		queue_audio("audio/ball_reset.mp3")
+	} else if (eventString == "laser_kill"){
 		display_medal("images/laser_kill.png")
-	} else if (eventID == 14147 ){
+	} else if (eventString == "grenade_stick"){
 		display_medal("images/grenade_stick.png")
-	} else if (eventID == 14180 ){
+	} else if (eventString == "incineration"){
 		display_medal("images/incineration.png")
-	} else if (eventID == 14268 ){
+	} else if (eventString == "killjoy"){
 		display("images/killjoy.png", "audio/killjoy.mp3")
-	} else if (eventID == 14172 ){
+	} else if (eventString == "from_the_grave"){
 		display_medal("images/from_the_grave.png")
-	} else if (eventID == 14155 ){
+	} else if (eventString == "assassin"){
 		display_medal("images/assassin.png")
-	} else if (eventID == 14141 ){
+	} else if (eventString == "beat_down"){
 		display_medal("images/beat_down.png")
-	} else if (eventID == 14199 ){
+	} else if (eventString == "extermination"){
 		display("images/extermination.png", "audio/extermination.mp3")
-	} else if (eventID == 14171 ){
+	} else if (eventString == "bulltrue"){
 		display_medal("images/bulltrue.png")
-	} else if (eventID == 14221 ){
+	} else if (eventString == "killing_spree"){
 		display("images/killing_spree.png", "audio/killing_spree.mp3")
-	} else if (eventID == 14223 ){
+	} else if (eventString == "killing_frenzy"){
 		display("images/killing_frenzy.png", "audio/killing_frenzy.mp3")
-	} else if (eventID == 14225 ){
+	} else if (eventString == "running_riot"){
 		display("images/running_riot.png", "audio/running_riot.mp3")
-	} else if (eventID == 14227 ){
+	} else if (eventString == "rampage"){
 		display("images/rampage.png", "audio/rampage.mp3")
-	} else if (eventID == 14229 ){
+	} else if (eventString == "untouchable"){
 		display("images/untouchable.png", "audio/untouchable.mp3")
-	} else if (eventID == 14231 ){
+	} else if (eventString == "invincible"){
 		display("images/invincible.png", "audio/invincible.mp3")
-	} else if (eventID == 14203 ){
+	} else if (eventString == "double_kill"){
 		display("images/double_kill.png", "audio/double_kill.mp3")
-	} else if (eventID == 14205 ){
+	} else if (eventString == "triple_kill"){
 		display("images/triple_kill.png", "audio/triple_kill.mp3")
-	} else if (eventID == 14207 ){
+	} else if (eventString == "overkill"){
 		display("images/overkill.png", "audio/overkill.mp3")
-	} else if (eventID == 14209 ){
+	} else if (eventString == "killtacular"){
 		display("images/killtacular.png", "audio/killtacular.mp3")
-	} else if (eventID == 14211 ){
+	} else if (eventString == "killtrocity"){
 		display("images/killtrocity.png", "audio/killtrocity.mp3")
-	} else if (eventID == 14213 ){
+	} else if (eventString == "killimanjaro"){
 		display("images/killimanjaro.png", "audio/killimanjaro.mp3")
-	} else if (eventID == 14215 ){
+	} else if (eventString == "killtastrophe"){
 		display("images/killtastrophe.png", "audio/killtastrophe.mp3")
-	} else if (eventID == 14217 ){
+	} else if (eventString == "killpocalypse"){
 		display("images/killpocalypse.png", "audio/killpocalypse.mp3")
-	} else if (eventID == 14219 ){
+	} else if (eventString == "killionaire"){
 		display("images/killionaire.png", "audio/killionaire.mp3")
-	} else if (eventID == 14151 ){
+	} else if (eventString == "sniper_kill"){
 		display_medal("images/sniper_kill.png")
-	} else if (eventID == 14233 ){
+	} else if (eventString == "sniper_spree"){
 		display("images/sniper_spree.png", "audio/sniper_spree.mp3")
-	} else if (eventID == 14235 ){
+	} else if (eventString == "sharpshooter"){
 		display("images/sharpshooter.png", "audio/sharpshooter.mp3")
-	} else if (eventID == 14237 ){
+	} else if (eventString == "shotgun_spree"){
 		display("images/shotgun_spree.png", "audio/shotgun_spree.mp3")
-	} else if (eventID == 14239 ){
+	} else if (eventString == "open_season"){
 		display("images/open_season.png", "audio/open_season.mp3")
-	} else if (eventID == 14245 ){
+	} else if (eventString == "sword_spree"){
 		display("images/sword_spree.png", "audio/sword_spree.mp3")
-	} else if (eventID == 14247 ){
+	} else if (eventString == "slice_n_dice"){
 		display("images/slice_n_dice.png", "audio/slice_n_dice.mp3")
-	} else if (eventID == 14137 ){
+	} else if (eventString == "splatter"){
 		display_medal("images/splatter.png")
-	} else if (eventID == 14241 ){
+	} else if (eventString == "splatter_spree"){
 		display("images/splatter_spree.png", "audio/splatter_spree.mp3")
-	} else if (eventID == 14243 ){
+	} else if (eventString == "vehicular_manslaughter"){
 		display("images/vehicular_manslaughter.png", "audio/vehicular_manslaughter.mp3")
-	} else if (eventID == 14183 ){
+	} else if (eventString == "wheelman"){
 		display_medal("images/wheelman.png")
-	} else if (eventID == 14174 ){
+	} else if (eventString == "hijacker"){
 		display_medal("images/hijacker.png")
-	} else if (eventID == 14176 ){
+	} else if (eventString == "skyjacker"){
 		display_medal("images/skyjacker.png")
-	} else if (eventID == 14182 ){
+	} else if (eventString == "vehicle_kill"){
 		display_medal("images/vehicle_kill.png")
-	} else if (eventID == 14328 ){
+	} else if (eventString == "vip_kill"){
 		display_medal("images/vip_kill.png")
-	} else if (eventID == 14361 ){
+	} else if (eventString == "bomb_planted"){
 		display("images/bomb_planted.png")
-	} else if (eventID == 22083 ){
+	} else if (eventString == "bomb_carrier_kill"){
 		display_medal("images/bomb_carrier_kill.png")
-	} else if (eventID == 14299 ){
+	} else if (eventString == "flag_captured"){
 		display("images/flag_captured.png", "audio/flag_captured.mp3")
-	} else if (eventID == 22082 ){
+	} else if (eventString == "flag_carrier_kill"){
 		display_medal("images/flag_carrier_kill.png")
-	} else if (eventID == 24984 ){
+	} else if (eventString == "flag_kill"){
 		display_medal("images/flag_kill.png")
-	} else if (eventID == 14261 ){
+	} else if (eventString == "hail_to_the_king"){
 		display("images/hail_to_the_king.png", "audio/hail_to_the_king.mp3")
-	} else if (eventID == 24991 ){
+	} else if (eventString == "oddball_kill"){
 		display_medal("images/oddball_kill.png")
-	} else if (eventID == 14201 ){
+	} else if (eventString == "perfection"){
 		display("images/perfection.png", "audio/perfection.mp3")
-	} else if (eventID == 14339 ){
+	} else if (eventString == "juggernaut_kill"){
 		display_medal("images/juggernaut_kill.png")
-	} else if (eventID == 14249 ){
+	} else if (eventString == "juggernaut_spree"){
 		display("images/juggernaut_spree.png", "audio/juggernaut_spree.mp3")
-	} else if (eventID == 14251 ){
+	} else if (eventString == "unstoppable"){
 		display("images/unstoppable.png", "audio/unstoppable.mp3")
-	} else if (eventID == 14367 ){
+	} else if (eventString == "last_man_standing"){
 		display("images/last_man_standing.png", "audio/last_man_standing.mp3")
-	} else if (eventID == 14253 ){
+	} else if (eventString == "infection_spree"){
 		display("images/infection_spree.png", "audio/infection_spree.mp3")
-	} else if (eventID == 14255 ){
+	} else if (eventString == "mmm_brains"){
 		display("images/mmm_brains.png", "audio/mmm_brains.mp3")
-	} else if (eventID == 14257 ){
+	} else if (eventString == "zombie_killing_spree"){
 		display("images/zombie_killing_spree.png", "audio/zombie_killing_spree.mp3")
-	} else if (eventID == 14259 ){
+	} else if (eventString == "hells_janitor"){
 		display("images/hells_janitor.png", "audio/hells_janitor.mp3")
-	} else if (eventID == 14316 ){
-		queue_audio("audio/king_of_the_hill.mp3", false)
-	} else if (eventID == 14296 ){
-		queue_audio("audio/capture_the_flag.mp3", false)
-	} else if (eventID == 14311 ){
-		queue_audio("audio/oddball.mp3", false)
-	} else if (eventID == 14341 ){
-		queue_audio("audio/territories.mp3", false)
-	} else if (eventID == 14348 ){
-		queue_audio("audio/assault.mp3", false)
-	} else if (eventID == 14294 ){
-		queue_audio("audio/slayer.mp3", false)
-	} else if (eventID == 14297 ){
-		queue_audio("audio/defense.mp3", false)
-	} else if (eventID == 14123 ){
-		queue_audio("audio/thirty_mins_remaining.mp3", false)
-	} else if (eventID == 14124 ){
-		queue_audio("audio/fifteen_mins_remaining.mp3", false)
-	} else if (eventID == 14125 ){
-		queue_audio("audio/five_mins_remaining.mp3", false)
-	} else if (eventID == 14126 ){
-		queue_audio("audio/one_min_remaining.mp3", false)
-	} else if (eventID == 14134 ){
-		queue_audio("audio/thirty_secs_remaining.mp3", false)
-	} else if (eventID == 14135 ){
-		queue_audio("audio/ten_secs_remaining.mp3", false)
-	} else if (eventID == 14344 ){
-		queue_audio("audio/territory_captured.mp3", false)
-	} else if (eventID == 14347 || eventID == 14346 || eventID == 14345 ){
-		queue_audio("audio/territory_lost.mp3", false)
-	} else if (eventID == 24959 ){
-		queue_audio("audio/target_changed.mp3", false)
-	} else if (eventID == 14337 || eventID == 14338 ){
-		queue_audio("audio/new_juggernaut.mp3", false)
-	} else if (eventID == 14373 || eventID == 14374 ){
-		queue_audio("audio/new_zombie.mp3", false)
-	} else if (eventID == 14326 || eventID == 14327 ){
-		queue_audio("audio/new_vip.mp3", false)
-	} else if (eventID == 14328 || eventID == 14329 || eventID == 14330 ){
-		queue_audio("audio/vip_killed.mp3", false)
-	} else if (eventID == 22088 || eventID == 22089 || eventID == 22090 || eventID == 22091 ){
-		queue_audio("audio/invincible.mp3", false)
-	} else if (eventID == 14120 || eventID == 14122 ){
-		queue_audio("audio/gained_the_lead.mp3", false)
-	} else if (eventID == 14127 ){
-		queue_audio("audio/game_over.mp3", false)
-	} else if (eventID == 14108 ){
-		queue_audio("audio/round_over.mp3", false)
-	} else if (eventID == 14145 ){
-		queue_audio("audio/sudden_death.mp3", false)
+	} else if (eventString == "king_of_the_hill"){
+		queue_audio("audio/king_of_the_hill.mp3")
+	} else if (eventString == "capture_the_flag"){
+		queue_audio("audio/capture_the_flag.mp3")
+	} else if (eventString == "oddball"){
+		queue_audio("audio/oddball.mp3")
+	} else if (eventString == "territories"){
+		queue_audio("audio/territories.mp3")
+	} else if (eventString == "assault"){
+		queue_audio("audio/assault.mp3")
+	} else if (eventString == "slayer"){
+		queue_audio("audio/slayer.mp3")
+	} else if (eventString == "defense"){
+		queue_audio("audio/defense.mp3")
+	} else if (eventString == "thirty_mins_remaining"){
+		queue_audio("audio/thirty_mins_remaining.mp3")
+	} else if (eventString == "fifteen_mins_remaining"){
+		queue_audio("audio/fifteen_mins_remaining.mp3")
+	} else if (eventString == "five_mins_remaining"){
+		queue_audio("audio/five_mins_remaining.mp3")
+	} else if (eventString == "one_min_remaining"){
+		queue_audio("audio/one_min_remaining.mp3")
+	} else if (eventString == "thirty_secs_remaining"){
+		queue_audio("audio/thirty_secs_remaining.mp3")
+	} else if (eventString == "ten_secs_remaining"){
+		queue_audio("audio/ten_secs_remaining.mp3")
+	} else if (eventString == "territory_captured"){
+		queue_audio("audio/territory_captured.mp3")
+	} else if (eventString == "territory_lost"){
+		queue_audio("audio/territory_lost.mp3")
+	} else if (eventString == "target_changed"){
+		queue_audio("audio/target_changed.mp3")
+	} else if (eventString == "new_juggernaut"){
+		queue_audio("audio/new_juggernaut.mp3")
+	} else if (eventString == "new_zombie"){
+		queue_audio("audio/new_zombie.mp3")
+	} else if (eventString == "new_vip"){
+		queue_audio("audio/new_vip.mp3")
+	} else if (eventString == "vip_killed"){
+		queue_audio("audio/vip_killed.mp3")
+	} else if (eventString == "invincible"){
+		queue_audio("audio/invincible.mp3")
+	} else if (eventString == "gained_the_lead"){
+		queue_audio("audio/gained_the_lead.mp3")
+	} else if (eventString == "game_over"){
+		queue_audio("audio/game_over.mp3")
+	} else if (eventString == "round_over"){
+		queue_audio("audio/round_over.mp3")
+	} else if (eventString == "sudden_death"){
+		queue_audio("audio/sudden_death.mp3")
 	}
+	//dew.show();
 }
