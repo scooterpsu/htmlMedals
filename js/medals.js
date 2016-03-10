@@ -3,40 +3,25 @@ var removeTime = 3500;
 var medalsPath = 'mods/medals/halo3/';
 var playQueue = [];
 
-$.fn.rotate = function() { 
-    var i = 0;
-    var medal = this.selector;
-    function spinLoop(medal) { 
-        setTimeout(function () {  
-            $(medal).css({'-webkit-transform' : 'rotate(-'+ i +'deg)'});
-            i+=10;
-            if (i < 360) { 
-                spinLoop(medal);
-            } else if ( i == 360){
-                spinLoop(medal);
-                setTimeout(function () { 
-                    pulse(medal);
-                }, 75)
-            }  
-        }, 6)
-    }
-    spinLoop(medal);
-};
-
-function pulse(medal) {
-    var i = 1;
-    function pulseLoop(medal) { 
-        setTimeout(function () {  
-            $(medal).css({'-webkit-transform' : 'scale('+ i +','+ i +')'});
-            i+=0.2;
-            if (i < 1.6) { 
-                pulseLoop(medal);
-            } else if (i = 1.6){
-                $(medal).css({'-webkit-transform' : 'scale(1,1)'});               
-            }  
-        }, 55)
-    }
-    pulseLoop(medal);
+$.fn.pulse = function() { 
+        var i = 0.5, x = 0, medal = this.selector;
+        $(medal).css('opacity', x );
+        function pulseLoop(medal) { 
+            setTimeout(function () {  
+                $(medal).css({'-webkit-transform' : 'scale('+ i +','+ i +')'});
+                $(medal).css('opacity', x );
+                i+=0.1, x+=0.4;
+                if (i < 1.5) { 
+                    pulseLoop(medal);
+                } else if (i = 1.5){
+                    $(medal).css({'-webkit-transform' : 'scale(1.2,1.2)'});   
+                    setTimeout(function () {  
+                        $(medal).css({'-webkit-transform' : 'scale(1,1)'});             
+                    }, 20)            
+                }  
+            }, 20)
+        }
+        pulseLoop(medal);
 };
 
 function display(medal, audio){
@@ -69,7 +54,7 @@ var medalNum = 0;
 function display_medal(medal){
 	var currentMedalNum = medalNum;
 	$('#medalBox').prepend('<img id="'+ medalNum + '" src="' + medalsPath + medal + '">');
-	$("#"+currentMedalNum).rotate();
+	$("#"+currentMedalNum).pulse();
 	setTimeout(function(){
 		$("#"+currentMedalNum).fadeOut(fadeTime, function() { $("#"+currentMedalNum).remove(); });
 	}, removeTime);
