@@ -8,14 +8,14 @@ $.fn.pulse = function() {
 	var i = 0.5, x = 0, medal = this.selector;
 	function pulseLoop(medal) { 
 		setTimeout(function () {  
-			$(medal).css({'-webkit-transform': 'scale('+ i +','+ i +')', 'opacity': x });
+			$(medal).css({'transform': 'scale('+ i +','+ i +')', 'opacity': x });
 			i+=0.1, x+=0.4;
 			if (i < 1.5) { 
 				pulseLoop(medal);
 			} else if (i = 1.5) {
-				$(medal).css({'-webkit-transform' : 'scale(1.2,1.2)'});   
+				$(medal).css({'transform' : 'scale(1.2,1.2)'});   
 				setTimeout(function () {  
-					$(medal).css({'-webkit-transform' : 'scale(1,1)'});             
+					$(medal).css({'transform' : 'scale(1,1)'});             
 				}, animTime)
 			}  
 		}, animTime)
