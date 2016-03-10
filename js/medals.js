@@ -230,8 +230,6 @@ function game_event(eventID){
 		queue_audio("audio/capture_the_flag.mp3", false)
 	} else if (eventID == 14311 ){
 		queue_audio("audio/oddball.mp3", false)
-	} else if (eventID == 14368 ){
-		queue_audio("audio/infection.mp3", false)
 	} else if (eventID == 14341 ){
 		queue_audio("audio/territories.mp3", false)
 	} else if (eventID == 14348 ){
@@ -266,8 +264,6 @@ function game_event(eventID){
 		queue_audio("audio/new_vip.mp3", false)
 	} else if (eventID == 14328 || eventID == 14329 || eventID == 14330 ){
 		queue_audio("audio/vip_killed.mp3", false)
-	} else if (eventID == 14119 || eventID == 14121 ){
-		queue_audio("audio/lost_the_lead.mp3", false)
 	} else if (eventID == 22088 || eventID == 22089 || eventID == 22090 || eventID == 22091 ){
 		queue_audio("audio/invincible.mp3", false)
 	} else if (eventID == 14120 || eventID == 14122 ){
