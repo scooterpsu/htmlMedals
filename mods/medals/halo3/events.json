@@ -1,10 +1,14 @@
 {
 	"general_event_suicide": {
-		"sound": "suicide.mp3"	},
-	"betrayed*": {
-		"sound": "betrayed.mp3"	},
-	"betrayal*": {
-		"sound": "betrayal.mp3"	},
+		"cause_player": {
+			"sound": "suicide.mp3"
+		}	},
+	"general_event_kill_teammate": {
+		"effect_player": {
+			"sound": "betrayed.mp3"		},
+		"cause_player": {
+			"sound": "betrayal.mp3"
+		}	},
 	"assault_event_bomb_dropped": {
 		"sound": "bomb_dropped.mp3"	},
 	"assault_event_bomb_returned_by_timeout": {

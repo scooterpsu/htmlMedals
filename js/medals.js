@@ -69,5 +69,21 @@ function doMedal(eventString){
 	if(eventJson[eventString].hasOwnProperty('sound')){
 		queue_audio(eventJson[eventString].sound);		
 	}
+	if(eventJson[eventString].hasOwnProperty('cause_player')){
+		if(eventJson[eventString].cause_player.hasOwnProperty('image')){
+			display_medal(eventJson[eventString].cause_player.image);
+		}
+		if(eventJson[eventString].cause_player.hasOwnProperty('sound')){
+			queue_audio(eventJson[eventString].cause_player.sound);		
+		}
+	}
+	if(eventJson[eventString].hasOwnProperty('effect_player')){
+		if(eventJson[eventString].effect_player.hasOwnProperty('image')){
+			display_medal(eventJson[eventString].effect_player.image);
+		}
+		if(eventJson[eventString].effect_player.hasOwnProperty('sound')){
+			queue_audio(eventJson[eventString].effect_player.sound);		
+		}	
+	}
 	//dew.show();
 }
