@@ -1,0 +1,244 @@
+{
+	"suicide": {
+		"sound": "suicide.mp3"	},
+	"betrayed": {
+		"sound": "betrayed.mp3"	},
+	"betrayal": {
+		"sound": "betrayal.mp3"	},
+	"bomb_dropped": {
+		"sound": "bomb_dropped.mp3"	},
+	"bomb_reset": {
+		"sound": "bomb_reset.mp3"	},
+	"bomb_taken": {
+		"sound": "bomb_taken.mp3"	},
+	"bomb_returned": {
+		"sound": "bomb_returned.mp3"	},
+	"bomb_detonated": {
+		"sound": "bomb_detonated.mp3"	},
+	"bomb_armed": {
+		"sound": "bomb_armed.mp3"	},
+	"bomb_disarmed": {
+		"sound": "bomb_disarmed.mp3"	},
+	"destination_moved": {
+		"sound": "destination_moved.mp3"	},
+	"hill_moved": {
+		"sound": "hill_moved.mp3"	},
+	"hill_controlled": {
+		"sound": "hill_controlled.mp3"	},
+	"hill_contested": {
+		"sound": "hill_contested.mp3"	},
+	"flag_reset": {
+		"sound": "flag_reset.mp3"	},
+	"flag_recovered": {
+		"sound": "flag_recovered.mp3"	},
+	"flag_taken": {
+		"sound": "flag_taken.mp3"	},
+	"flag_stolen": {
+		"sound": "flag_stolen.mp3"	},
+	"flag_dropped": {
+		"sound": "flag_dropped.mp3"	},
+	"ball_taken": {
+		"sound": "ball_taken.mp3"	},
+	"ball_dropped": {
+		"sound": "ball_dropped.mp3"	},
+	"play_ball": {
+		"sound": "play_ball.mp3"	},
+	"ball_reset": {
+		"sound": "ball_reset.mp3"	},
+	"laser_kill": {
+		"image": "laser_kill.png"	},
+	"grenade_stick": {
+		"image": "grenade_stick.png"	},
+	"incineration": {
+		"image": "incineration.png"	},
+	"killjoy": {
+		"image": "killjoy.png",
+		"sound": "killjoy.mp3"	},
+	"from_the_grave": {
+		"image": "from_the_grave.png"	},
+	"assassin": {
+		"image": "assassin.png"	},
+	"beat_down": {
+		"image": "beat_down.png"	},
+	"extermination": {
+		"image": "extermination.png",
+		"sound": "extermination.mp3"	},
+	"bulltrue": {
+		"image": "bulltrue.png"	},
+	"killing_spree": {
+		"image": "killing_spree.png",
+		"sound": "killing_spree.mp3"	},
+	"killing_frenzy": {
+		"image": "killing_frenzy.png",
+		"sound": "killing_frenzy.mp3"	},
+	"running_riot": {
+		"image": "running_riot.png",
+		"sound": "running_riot.mp3"	},
+	"rampage": {
+		"image": "rampage.png",
+		"sound": "rampage.mp3"	},
+	"untouchable": {
+		"image": "untouchable.png",
+		"sound": "untouchable.mp3"	},
+	"invincible": {
+		"image": "invincible.png",
+		"sound": "invincible.mp3"	},
+	"double_kill": {
+		"image": "double_kill.png",
+		"sound": "double_kill.mp3"	},
+	"triple_kill": {
+		"image": "triple_kill.png",
+		"sound": "triple_kill.mp3"	},
+	"overkill": {
+		"image": "overkill.png",
+		"sound": "overkill.mp3"	},
+	"killtacular": {
+		"image": "killtacular.png",
+		"sound": "killtacular.mp3"	},
+	"killtrocity": {
+		"image": "killtrocity.png",
+		"sound": "killtrocity.mp3"	},
+	"killimanjaro": {
+		"image": "killimanjaro.png",
+		"sound": "killimanjaro.mp3"	},
+	"killtastrophe": {
+		"image": "killtastrophe.png",
+		"sound": "killtastrophe.mp3"	},
+	"killpocalypse": {
+		"image": "killpocalypse.png",
+		"sound": "killpocalypse.mp3"	},
+	"killionaire": {
+		"image": "killionaire.png",
+		"sound": "killionaire.mp3"	},
+	"sniper_kill": {
+		"image": "sniper_kill.png"	},
+	"sniper_spree": {
+		"image": "sniper_spree.png",
+		"sound": "sniper_spree.mp3"	},
+	"sharpshooter": {
+		"image": "sharpshooter.png",
+		"sound": "sharpshooter.mp3"	},
+	"shotgun_spree": {
+		"image": "shotgun_spree.png",
+		"sound": "shotgun_spree.mp3"	},
+	"open_season": {
+		"image": "open_season.png",
+		"sound": "open_season.mp3"	},
+	"sword_spree": {
+		"image": "sword_spree.png",
+		"sound": "sword_spree.mp3"	},
+	"slice_n_dice": {
+		"image": "slice_n_dice.png",
+		"sound": "slice_n_dice.mp3"	},
+	"splatter": {
+		"image": "splatter.png"	},
+	"splatter_spree": {
+		"image": "splatter_spree.png",
+		"sound": "splatter_spree.mp3"	},
+	"vehicular_manslaughter": {
+		"image": "vehicular_manslaughter.png",
+		"sound": "vehicular_manslaughter.mp3"	},
+	"wheelman": {
+		"image": "wheelman.png"	},
+	"hijacker": {
+		"image": "hijacker.png"	},
+	"skyjacker": {
+		"image": "skyjacker.png"	},
+	"vehicle_kill": {
+		"image": "vehicle_kill.png"	},
+	"vip_kill": {
+		"image": "vip_kill.png"	},
+	"bomb_planted": {
+		"image": "bomb_planted.png"	},
+	"bomb_carrier_kill": {
+		"image": "bomb_carrier_kill.png"	},
+	"flag_captured": {
+		"image": "flag_captured.png",
+		"sound": "flag_captured.mp3"	},
+	"flag_carrier_kill": {
+		"image": "flag_carrier_kill.png"	},
+	"flag_kill": {
+		"image": "flag_kill.png"	},
+	"hail_to_the_king": {
+		"image": "hail_to_the_king.png",
+		"sound": "hail_to_the_king.mp3"	},
+	"oddball_kill": {
+		"image": "oddball_kill.png"	},
+	"perfection": {
+		"image": "perfection.png",
+		"sound": "perfection.mp3"	},
+	"juggernaut_kill": {
+		"image": "juggernaut_kill.png"	},
+	"juggernaut_spree": {
+		"image": "juggernaut_spree.png",
+		"sound": "juggernaut_spree.mp3"	},
+	"unstoppable": {
+		"image": "unstoppable.png",
+		"sound": "unstoppable.mp3"	},
+	"last_man_standing": {
+		"image": "last_man_standing.png",
+		"sound": "last_man_standing.mp3"	},
+	"infection_spree": {
+		"image": "infection_spree.png",
+		"sound": "infection_spree.mp3"	},
+	"mmm_brains": {
+		"image": "mmm_brains.png",
+		"sound": "mmm_brains.mp3"	},
+	"zombie_killing_spree": {
+		"image": "zombie_killing_spree.png",
+		"sound": "zombie_killing_spree.mp3"	},
+	"hells_janitor": {
+		"image": "hells_janitor.png",
+		"sound": "hells_janitor.mp3"	},
+	"king_of_the_hill": {
+		"sound": "king_of_the_hill.mp3"	},
+	"capture_the_flag": {
+		"sound": "capture_the_flag.mp3"	},
+	"oddball": {
+		"sound": "oddball.mp3"	},
+	"territories": {
+		"sound": "territories.mp3"	},
+	"assault": {
+		"sound": "assault.mp3"	},
+	"slayer": {
+		"sound": "slayer.mp3"	},
+	"defense": {
+		"sound": "defense.mp3"	},
+	"thirty_mins_remaining": {
+		"sound": "thirty_mins_remaining.mp3"	},
+	"fifteen_mins_remaining": {
+		"sound": "fifteen_mins_remaining.mp3"	},
+	"five_mins_remaining": {
+		"sound": "five_mins_remaining.mp3"	},
+	"one_min_remaining": {
+		"sound": "one_min_remaining.mp3"	},
+	"thirty_secs_remaining": {
+		"sound": "thirty_secs_remaining.mp3"	},
+	"ten_secs_remaining": {
+		"sound": "ten_secs_remaining.mp3"	},
+	"territory_captured": {
+		"sound": "territory_captured.mp3"	},
+	"territory_lost": {
+		"sound": "territory_lost.mp3"	},
+	"target_changed": {
+		"sound": "target_changed.mp3"	},
+	"new_juggernaut": {
+		"sound": "new_juggernaut.mp3"	},
+	"new_zombie": {
+		"sound": "new_zombie.mp3"	},
+	"new_vip": {
+		"sound": "new_vip.mp3"	},
+	"vip_killed": {
+		"sound": "vip_killed.mp3"	},
+	"invincible": {
+		"sound": "invincible.mp3"	},
+	"gained_the_lead": {
+		"sound": "gained_the_lead.mp3"	},
+	"game_over": {
+		"sound": "game_over.mp3"	},
+	"round_over": {
+		"sound": "round_over.mp3"	},
+	"sudden_death": {
+		"sound": "sudden_death.mp3"
+	}
+}
