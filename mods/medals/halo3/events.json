@@ -1,244 +1,242 @@
 {
-	"suicide": {
+	"general_event_suicide": {
 		"sound": "suicide.mp3"	},
-	"betrayed": {
+	"betrayed*": {
 		"sound": "betrayed.mp3"	},
-	"betrayal": {
+	"betrayal*": {
 		"sound": "betrayal.mp3"	},
-	"bomb_dropped": {
+	"assault_event_bomb_dropped": {
 		"sound": "bomb_dropped.mp3"	},
-	"bomb_reset": {
+	"assault_event_bomb_returned_by_timeout": {
 		"sound": "bomb_reset.mp3"	},
-	"bomb_taken": {
+	"assault_event_bomb_taken": {
 		"sound": "bomb_taken.mp3"	},
-	"bomb_returned": {
+	"assault_event_bomb_returned_by_player": {
 		"sound": "bomb_returned.mp3"	},
-	"bomb_detonated": {
+	"assault_event_bomb_captured": {
 		"sound": "bomb_detonated.mp3"	},
-	"bomb_armed": {
+	"assault_event_bomb_placed_on_enemy_post": {
 		"sound": "bomb_armed.mp3"	},
-	"bomb_disarmed": {
+	"assault_event_bomb_disarmed": {
 		"sound": "bomb_disarmed.mp3"	},
-	"destination_moved": {
+	"vip_event_destination_area_moved": {
 		"sound": "destination_moved.mp3"	},
-	"hill_moved": {
+	"king_event_hill_move": {
 		"sound": "hill_moved.mp3"	},
-	"hill_controlled": {
+	"king_event_hill_controlled": {
 		"sound": "hill_controlled.mp3"	},
-	"hill_contested": {
+	"king_event_hill_contested": {
 		"sound": "hill_contested.mp3"	},
-	"flag_reset": {
+	"ctf_event_flag_returned_by_timeout": {
 		"sound": "flag_reset.mp3"	},
-	"flag_recovered": {
+	"ctf_event_flag_returned_by_player": {
 		"sound": "flag_recovered.mp3"	},
-	"flag_taken": {
+	"ctf_event_flag_taken": {
 		"sound": "flag_taken.mp3"	},
-	"flag_stolen": {
+	"ctf_event_flag_grabbed_from_stand": {
 		"sound": "flag_stolen.mp3"	},
-	"flag_dropped": {
+	"ctf_event_flag_dropped": {
 		"sound": "flag_dropped.mp3"	},
-	"ball_taken": {
+	"oddball_event_ball_picked_up": {
 		"sound": "ball_taken.mp3"	},
-	"ball_dropped": {
+	"oddball_event_ball_dropped": {
 		"sound": "ball_dropped.mp3"	},
-	"play_ball": {
+	"oddball_event_ball_spawned": {
 		"sound": "play_ball.mp3"	},
-	"ball_reset": {
+	"oddball_event_ball_reset": {
 		"sound": "ball_reset.mp3"	},
-	"laser_kill": {
+	"earn_wp_event_spartanlaser_kill": {
 		"image": "laser_kill.png"	},
-	"grenade_stick": {
+	"earn_wp_event_stickygrenade_kill": {
 		"image": "grenade_stick.png"	},
-	"incineration": {
+	"earn_wp_event_flame_kill": {
 		"image": "incineration.png"	},
-	"killjoy": {
+	"earn_wp_event_player_kill_spreeplayer": {
 		"image": "killjoy.png",
 		"sound": "killjoy.mp3"	},
-	"from_the_grave": {
+	"earn_wp_event_deadplayer_kill": {
 		"image": "from_the_grave.png"	},
-	"assassin": {
+	"earn_wp_event_bashbehind_kill": {
 		"image": "assassin.png"	},
-	"beat_down": {
+	"earn_wp_event_bash_kill": {
 		"image": "beat_down.png"	},
-	"extermination": {
+	"earn_wp_event_extermination": {
 		"image": "extermination.png",
 		"sound": "extermination.mp3"	},
-	"bulltrue": {
+	"earn_wp_event_shotgun_kill_sword": {
 		"image": "bulltrue.png"	},
-	"killing_spree": {
+	"earn_wp_event_5_kills_in_a_row": {
 		"image": "killing_spree.png",
 		"sound": "killing_spree.mp3"	},
-	"killing_frenzy": {
+	"earn_wp_event_10_kills_in_a_row": {
 		"image": "killing_frenzy.png",
 		"sound": "killing_frenzy.mp3"	},
-	"running_riot": {
+	"earn_wp_event_15_kills_in_a_row": {
 		"image": "running_riot.png",
 		"sound": "running_riot.mp3"	},
-	"rampage": {
+	"earn_wp_event_20_kills_in_a_row": {
 		"image": "rampage.png",
 		"sound": "rampage.mp3"	},
-	"untouchable": {
+	"earn_wp_event_25_kills_in_a_row": {
 		"image": "untouchable.png",
 		"sound": "untouchable.mp3"	},
-	"invincible": {
+	"earn_wp_event_30_kills_in_a_row": {
 		"image": "invincible.png",
 		"sound": "invincible.mp3"	},
-	"double_kill": {
+	"earn_wp_event_multikill_2": {
 		"image": "double_kill.png",
 		"sound": "double_kill.mp3"	},
-	"triple_kill": {
+	"earn_wp_event_multikill_3": {
 		"image": "triple_kill.png",
 		"sound": "triple_kill.mp3"	},
-	"overkill": {
+	"earn_wp_event_multikill_4": {
 		"image": "overkill.png",
 		"sound": "overkill.mp3"	},
-	"killtacular": {
+	"earn_wp_event_multikill_5": {
 		"image": "killtacular.png",
 		"sound": "killtacular.mp3"	},
-	"killtrocity": {
+	"earn_wp_event_multikill_6": {
 		"image": "killtrocity.png",
 		"sound": "killtrocity.mp3"	},
-	"killimanjaro": {
+	"earn_wp_event_multikill_7": {
 		"image": "killimanjaro.png",
 		"sound": "killimanjaro.mp3"	},
-	"killtastrophe": {
+	"earn_wp_event_multikill_8": {
 		"image": "killtastrophe.png",
 		"sound": "killtastrophe.mp3"	},
-	"killpocalypse": {
+	"earn_wp_event_multikill_9": {
 		"image": "killpocalypse.png",
 		"sound": "killpocalypse.mp3"	},
-	"killionaire": {
+	"earn_wp_event_multikill_10": {
 		"image": "killionaire.png",
 		"sound": "killionaire.mp3"	},
-	"sniper_kill": {
+	"earn_wp_event_kill_sniper": {
 		"image": "sniper_kill.png"	},
-	"sniper_spree": {
+	"flavor_event_sniper_5": {
 		"image": "sniper_spree.png",
 		"sound": "sniper_spree.mp3"	},
-	"sharpshooter": {
+	"flavor_event_sniper_10": {
 		"image": "sharpshooter.png",
 		"sound": "sharpshooter.mp3"	},
-	"shotgun_spree": {
+	"flavor_event_shotgun_5": {
 		"image": "shotgun_spree.png",
 		"sound": "shotgun_spree.mp3"	},
-	"open_season": {
+	"flavor_event_shotgun_10": {
 		"image": "open_season.png",
 		"sound": "open_season.mp3"	},
-	"sword_spree": {
+	"flavor_event_sword_5": {
 		"image": "sword_spree.png",
 		"sound": "sword_spree.mp3"	},
-	"slice_n_dice": {
+	"flavor_event_sword_10": {
 		"image": "slice_n_dice.png",
 		"sound": "slice_n_dice.mp3"	},
-	"splatter": {
+	"earn_wp_event_vehicle_impact_kill": {
 		"image": "splatter.png"	},
-	"splatter_spree": {
+	"flavor_event_vehicle_5": {
 		"image": "splatter_spree.png",
 		"sound": "splatter_spree.mp3"	},
-	"vehicular_manslaughter": {
+	"flavor_event_vehicle_10": {
 		"image": "vehicular_manslaughter.png",
 		"sound": "vehicular_manslaughter.mp3"	},
-	"wheelman": {
+	"general_event_driver_assist_gunner": {
 		"image": "wheelman.png"	},
-	"hijacker": {
+	"earn_wp_event_vehicle_hijack": {
 		"image": "hijacker.png"	},
-	"skyjacker": {
+	"earn_wp_event_aircraft_hijack": {
 		"image": "skyjacker.png"	},
-	"vehicle_kill": {
+	"vip_event_vip_killed": {
 		"image": "vehicle_kill.png"	},
 	"vip_kill": {
 		"image": "vip_kill.png"	},
-	"bomb_planted": {
+	"assault_event_bomb_placed_on_enemy_post": {
 		"image": "bomb_planted.png"	},
-	"bomb_carrier_kill": {
+	"general_event_kill_bomb_carrier": {
 		"image": "bomb_carrier_kill.png"	},
-	"flag_captured": {
+	"flavor_event_ctf_flag_captured": {
 		"image": "flag_captured.png",
 		"sound": "flag_captured.mp3"	},
-	"flag_carrier_kill": {
+	"flavor_event_ctf_flag_player_kill_carrier": {
 		"image": "flag_carrier_kill.png"	},
-	"flag_kill": {
+	"flavor_event_ctf_flag_carrier_kill_player": {
 		"image": "flag_kill.png"	},
-	"hail_to_the_king": {
+	"flavor_event_koth_5": {
 		"image": "hail_to_the_king.png",
 		"sound": "hail_to_the_king.mp3"	},
-	"oddball_kill": {
+	"earn_wp_event_oddball_carrier_kill_player": {
 		"image": "oddball_kill.png"	},
-	"perfection": {
+	"earn_wp_event_perfection": {
 		"image": "perfection.png",
 		"sound": "perfection.mp3"	},
-	"juggernaut_kill": {
+	"flavor_event_juggernaut_player_kill_juggernaut": {
 		"image": "juggernaut_kill.png"	},
-	"juggernaut_spree": {
+	"flavor_event_juggernaut_5": {
 		"image": "juggernaut_spree.png",
 		"sound": "juggernaut_spree.mp3"	},
-	"unstoppable": {
+	"flavor_event_juggernaut_10": {
 		"image": "unstoppable.png",
 		"sound": "unstoppable.mp3"	},
-	"last_man_standing": {
+	"infection_event_survive": {
 		"image": "last_man_standing.png",
 		"sound": "last_man_standing.mp3"	},
-	"infection_spree": {
+	"flavor_event_zombie_5": {
 		"image": "infection_spree.png",
 		"sound": "infection_spree.mp3"	},
-	"mmm_brains": {
+	"flavor_event_zombie_10": {
 		"image": "mmm_brains.png",
 		"sound": "mmm_brains.mp3"	},
-	"zombie_killing_spree": {
+	"flavor_event_human_5": {
 		"image": "zombie_killing_spree.png",
 		"sound": "zombie_killing_spree.mp3"	},
-	"hells_janitor": {
+	"flavor_event_human_10": {
 		"image": "hells_janitor.png",
 		"sound": "hells_janitor.mp3"	},
-	"king_of_the_hill": {
+	"king_event_game_start": {
 		"sound": "king_of_the_hill.mp3"	},
-	"capture_the_flag": {
+	"ctf_event_game_start": {
 		"sound": "capture_the_flag.mp3"	},
-	"oddball": {
+	"oddball_event_game_start": {
 		"sound": "oddball.mp3"	},
-	"territories": {
+	"territories_event_game_start": {
 		"sound": "territories.mp3"	},
-	"assault": {
+	"assault_event_game_start": {
 		"sound": "assault.mp3"	},
-	"slayer": {
+	"slayer_event_game_start": {
 		"sound": "slayer.mp3"	},
-	"defense": {
+	"ctf_event_flag_new_defensive_team": {
 		"sound": "defense.mp3"	},
-	"thirty_mins_remaining": {
+	"general_event_30_minutes_left": {
 		"sound": "thirty_mins_remaining.mp3"	},
-	"fifteen_mins_remaining": {
+	"general_event_15_minutes_left": {
 		"sound": "fifteen_mins_remaining.mp3"	},
-	"five_mins_remaining": {
+	"general_event_5_minutes_left": {
 		"sound": "five_mins_remaining.mp3"	},
-	"one_min_remaining": {
+	"general_event_1_minute_left": {
 		"sound": "one_min_remaining.mp3"	},
-	"thirty_secs_remaining": {
+	"general_event_30_seconds_left": {
 		"sound": "thirty_secs_remaining.mp3"	},
-	"ten_secs_remaining": {
+	"general_event_10_seconds_left": {
 		"sound": "ten_secs_remaining.mp3"	},
-	"territory_captured": {
+	"territories_event_territory_captured": {
 		"sound": "territory_captured.mp3"	},
-	"territory_lost": {
+	"territories_event_side_switch": {
 		"sound": "territory_lost.mp3"	},
-	"target_changed": {
+	"slayer_event_new_target": {
 		"sound": "target_changed.mp3"	},
-	"new_juggernaut": {
+	"juggernaut_event_new_juggernaut": {
 		"sound": "new_juggernaut.mp3"	},
-	"new_zombie": {
+	"infection_event_new_infection": {
 		"sound": "new_zombie.mp3"	},
-	"new_vip": {
+	"vip_event_new_vip": {
 		"sound": "new_vip.mp3"	},
-	"vip_killed": {
+	"vip_event_vip_killed": {
 		"sound": "vip_killed.mp3"	},
-	"invincible": {
-		"sound": "invincible.mp3"	},
-	"gained_the_lead": {
+	"general_event_gained_lead": {
 		"sound": "gained_the_lead.mp3"	},
-	"game_over": {
+	"general_event_game_over": {
 		"sound": "game_over.mp3"	},
-	"round_over": {
+	"general_event_round_over": {
 		"sound": "round_over.mp3"	},
-	"sudden_death": {
+	"general_event_sudden_death": {
 		"sound": "sudden_death.mp3"
 	}
 }
