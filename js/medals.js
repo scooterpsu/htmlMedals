@@ -1,14 +1,17 @@
 var fadeTime = 300;
 var animTime = 18;
 var removeTime = 3500;
-var medalsPath = 'dew:///halo3/';
+var medalsPath = 'medals://';
 var playQueue = [];
 var eventJson;
 
 $(document).ready(function() {
-	$.getJSON(medalsPath+'events.json', function(json) {
-		eventJson = json;
-	});
+    dew.command('Game.MedalPack', {}, function(response) {
+        medalsPath = medalsPath + response + "/";
+        $.getJSON(medalsPath+'events.json', function(json) {
+            eventJson = json;
+        });
+    });
 });
 
 dew.on("mpevent", function (event) {
