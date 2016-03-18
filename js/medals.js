@@ -1,7 +1,7 @@
 var fadeTime = 300;
 var animTime = 18;
 var removeTime = 3500;
-var medalsPath = 'mods/medals/halo3/';
+var medalsPath = 'dew:///halo3/';
 var playQueue = [];
 var eventJson;
 
@@ -46,6 +46,7 @@ function play(audio){
 	isPlaying = true;
 	var audioElement = new Audio(audio);
 	audioElement.play();
+    audioElement.volume = 0.5;
 	audioElement.onended = function(){
 		isPlaying = false;
 		playQueue.splice(0, 1);
@@ -67,6 +68,7 @@ function display_medal(medal){
 }
 
 function doMedal(eventString){
+    //console.log(eventString);
     if(eventJson[eventString]){
         if(eventJson[eventString].hasOwnProperty('image')){
             display_medal(eventJson[eventString].image);
