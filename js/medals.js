@@ -15,7 +15,7 @@ $(document).ready(function() {
 });
 
 dew.on("mpevent", function (event) {
-    doMedal(event.data.name);
+    doMedal(event.data.name, event.data.audience);
 });
 
 $.fn.pulse = function() { 
@@ -70,8 +70,7 @@ function display_medal(medal){
 	medalNum++;
 }
 
-function doMedal(eventString){
-    //console.log(eventString);
+function doMedal(eventString, audience){
     if(eventJson[eventString]){
         if(eventJson[eventString].hasOwnProperty('image')){
             display_medal(eventJson[eventString].image);
@@ -79,21 +78,47 @@ function doMedal(eventString){
         if(eventJson[eventString].hasOwnProperty('sound')){
             queue_audio(eventJson[eventString].sound);		
         }
-        if(eventJson[eventString].hasOwnProperty('cause_player')){
-            if(eventJson[eventString].cause_player.hasOwnProperty('image')){
-                display_medal(eventJson[eventString].cause_player.image);
-            }
-            if(eventJson[eventString].cause_player.hasOwnProperty('sound')){
-                queue_audio(eventJson[eventString].cause_player.sound);		
-            }
-        }
-        if(eventJson[eventString].hasOwnProperty('effect_player')){
-            if(eventJson[eventString].effect_player.hasOwnProperty('image')){
-                display_medal(eventJson[eventString].effect_player.image);
-            }
-            if(eventJson[eventString].effect_player.hasOwnProperty('sound')){
-                queue_audio(eventJson[eventString].effect_player.sound);		
-            }	
+        switch(audience){
+            case 0:
+                if(eventJson[eventString].hasOwnProperty('cause_player')){
+                    if(eventJson[eventString].cause_player.hasOwnProperty('image')){
+                        display_medal(eventJson[eventString].cause_player.image);
+                    }
+                    if(eventJson[eventString].cause_player.hasOwnProperty('sound')){
+                        queue_audio(eventJson[eventString].cause_player.sound);		
+                    }
+                }
+                break;
+            case 1:
+                if(eventJson[eventString].hasOwnProperty('cause_team')){
+                    if(eventJson[eventString].cause_team.hasOwnProperty('image')){
+                        display_medal(eventJson[eventString].cause_team.image);
+                    }
+                    if(eventJson[eventString].cause_team.hasOwnProperty('sound')){
+                        queue_audio(eventJson[eventString].cause_team.sound);		
+                    }
+                }
+                break;
+            case 2:
+                if(eventJson[eventString].hasOwnProperty('effect_player')){
+                    if(eventJson[eventString].effect_player.hasOwnProperty('image')){
+                        display_medal(eventJson[eventString].effect_player.image);
+                    }
+                    if(eventJson[eventString].effect_player.hasOwnProperty('sound')){
+                        queue_audio(eventJson[eventString].effect_player.sound);		
+                    }	
+                }
+                break;
+            case 3:
+                if(eventJson[eventString].hasOwnProperty('effect_team')){
+                    if(eventJson[eventString].effect_team.hasOwnProperty('image')){
+                        display_medal(eventJson[eventString].effect_team.image);
+                    }
+                    if(eventJson[eventString].effect_team.hasOwnProperty('sound')){
+                        queue_audio(eventJson[eventString].effect_team.sound);		
+                    }	
+                }
+                break;
         }
         dew.show();
     }
