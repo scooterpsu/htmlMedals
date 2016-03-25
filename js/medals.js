@@ -61,11 +61,17 @@ function play(audio){
 
 var medalNum = 0;
 function display_medal(medal){
+    dew.show();
 	var currentMedalNum = medalNum;
 	$('#medalBox').prepend('<img id="'+ medalNum + '" src="' + medalsPath + 'images/' + medal + '">');
 	$("#"+currentMedalNum).pulse();
 	setTimeout(function(){
-		$("#"+currentMedalNum).fadeOut(fadeTime, function() { $("#"+currentMedalNum).remove(); });
+		$("#"+currentMedalNum).fadeOut(fadeTime, function() { 
+            $("#"+currentMedalNum).remove(); 
+            if(!$('#medalBox img').length){
+                dew.hide();  
+            }
+        });
 	}, removeTime);
 	medalNum++;
 }
@@ -120,6 +126,5 @@ function doMedal(eventString, audience){
                 }
                 break;
         }
-        dew.show();
     }
 }
