@@ -1,4 +1,4 @@
-var fadeTime = 400;
+var fadeTime = 800;
 var animTime = 18;
 var removeTime = 4500;
 var medalsPath = 'medals://';
@@ -63,11 +63,10 @@ var medalNum = 0;
 function display_medal(medal){
     dew.show();
 	var currentMedalNum = medalNum;
-	var img = $('<img />', { 
+	$('<img />', { 
         id: currentMedalNum,
-        src: medalsPath + 'images/' + medal
-    });
-    img.prependTo($('#medalBox'));
+        src: medalsPath + 'images/' + htmlEncode(medal)
+    }).prependTo($('#medalBox'));
 	$("#"+currentMedalNum).pulse();
 	setTimeout(function(){
 		$("#"+currentMedalNum).fadeOut(fadeTime, function() { 
@@ -134,4 +133,8 @@ function doMedal(eventString, audience){
                 break;
         }
     }
+}
+
+function htmlEncode(value) {
+    return $('<div>').text(value).html();
 }
